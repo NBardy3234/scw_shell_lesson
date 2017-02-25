@@ -1,5 +1,11 @@
 # This script is used to count the number of characters in a file
 
+# We're adding a help function!
+if [ "$1" == "-h" ]; then
+    echo "Usage: sh $0 <input_file> <output_file>"
+    exit
+fi
+
 # $1 is input file on command line
 #head -5 $1 | sort > temp.txt
 #head -5 = print first 5 lines of file
